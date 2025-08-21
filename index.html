@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tree Damages Caused by Ice Storms </title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/prism.css"/>
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+    <!-- Optional theme -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  <link href="css/myStyle.css " rel="stylesheet">
+  <link href="css/thumbnail.css" rel="stylesheet">
+
+    <style type="text/css" media="screen">
+    table td.highlighted{background-color:#87CEFA;}
+  </style>
+
+<style>
+  h2
+  { 
+    text-align: left;
+  }
+
+     p.note
+     {
+        font-family: Arial Black;
+        font-size: 40px;
+     }
+    ul.note
+    {
+      list-style-type: none;
+      padding-left: 0px;
+    }
+
+    li.note {
+
+      font-family: Verdana;
+      position: relative;
+      padding-left: 7px;
+      font-size: 13px;
+    }
+
+    li.note:before {
+        content: "\e080";
+        font-family: 'Glyphicons Halflings';
+        font-size: 16px;
+        position: relative;
+        margin-right: 3px;
+        top: 3px;
+        color: #ccc;
+      }
+</style>
+</head>
+  <body>
+    <div class="container">
+  <h1> <center><b>Enhancing Community Resilience to Tree Damages Caused by Ice Storms through Co-design and Co-learning </b> </center> </h1>
+
+  <!--<p align = "center"><font size = "4"> <a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a>, <a href="https://www.gineshidalgo.com/">Gines Hidalgo</a>, 
+  <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&hl=en">Shih-En Wei</a>, 
+  <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a></font></p>-->
+  <!-- <p align = "center"><font size = "4"> Carnegie Mellon University </font></p>-->
+<br>
+
+<!--  <div id="teaser">
+      <img src="pro.jpg"  width="100%" alt="cities_ndui">
+	  <h4> <center><b> Figure 1.</b> The proposed framework for generating 30m annual global NDUI Maps</center> </h4>
+  </div> -->
+
+<br>
+<h2>Abstract</h2>
+ <!--<b>Quoting <a href="https://arxiv.org/abs/1812.08008"><i>OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields</i></a></b>:-->
+<h4 style="text-align:justify;" text-indent:50px;>
+The objective of this Civic Innovation Challenge Planning Grant (CIVIC-PG) is to support research on novel measures to predict and prevent urban tree damage caused by ice storms. Ice storms are among the most damaging weather hazards to urban tree population, yet their effect remains poorly understood. Often situated in the transition zone between solid snow and liquid rain precipitation during the winter season, freezing rain occurring over the Southern Great Plains region could create large amounts of ice accumulation on urban trees and other structures. While local communities in this region are familiar with severe storm warning and shelter-seeking advisory, they are less prepared for or knowledgeable about resulting urban tree damage and cascading risk to properties and infrastructures caused by ice storms. The project team partners with stakeholders from industry, government, and non-profit organizations in Oklahoma City (OKC), Oklahoma. Through community engagement and participatory research, the planning project aims to empower citizens in data collection, problem-solving, and resilience-building efforts in support of social cohesion, trust, and collective responsibility.
+
+Using metropolitan OKC area as the pilot site, the research project examines factors contributing to urban tree vulnerability and develops effective solutions to mitigate risks. The goal is to create an urban tree observatory and accompanying social network in the OKC. The interdisciplinary team organizes a series of surveys and interviews to gather local knowledge. Specific tasks in Stage 1 include: (1) construct a framework to identify areas with potential risk of urban tree damages; (2) co-design and co-produce interventions addressing community-identified needs and priorities; and (3) enhance education and public awareness about the importance of urban trees, and the risk posed by ice storms. This project generates new knowledge, tools, and best practices that can be shared across communities, regions, and sectors. Collectively, they promote learning and collaboration, and foster a culture of preparedness and adaptation to ice storms.
+
+This project is in response to the Civic Innovation Challenge program?s Track A. Climate and Environmental Instability - Building Resilient Communities through Co-Design, Adaption, and Mitigation and is a collaboration between NSF, the Department of Homeland Security, and the Department of Energy.
+</h4>
+<br>
+
+<br>
+<h2>Background</h2>
+ <!--<b>Quoting <a href="https://arxiv.org/abs/1812.08008"><i>OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields</i></a></b>:-->
+<h4 style="text-align:justify;" text-indent:56px;> What is the NSF CIVIC Challenge?</h4>
+<h4 style="text-align:justify;" text-indent:50px;> A funding initiative from the National Science Foundation (NSF) to encourage community-driven innovation.
+Focuses on partnerships between researchers and local communities to solve real-world problems.</h4>
+<h4 style="text-align:justify;" text-indent:56px;> What is Stage 1?</h4>
+<h4 style="text-align:justify;" text-indent:50px;> Provides planning and research funding ($75,000) to explore innovative solutions.
+Helps build partnerships, conduct pilot studies, and gather community input.
+Lays the foundation for applying to Stage 2, where up to $1 million is awarded for implementation.</h4>
+<h4 style="text-align:justify;" text-indent:56px;> Our Project: Tree Hazard Monitoring and Early Warning System for Ice Storms & Tree Damage</h4>
+<h4 style="text-align:justify;" text-indent:56px;> Goal: Develop a community-informed, science-based system to help prepare for and mitigate ice storm damage.</h4>
+<h4 style="text-align:justify;" text-indent:56px;> Stage 1 has helped us:</h4>
+<h4 style="text-align:justify;" text-indent:50px;> Survey the community to understand concerns and needs.</h4>
+<h4 style="text-align:justify;" text-indent:50px;> Engage stakeholders (city officials, emergency responders, residents).</h4>
+<h4 style="text-align:justify;" text-indent:50px;> Identify opportunities to improve urban forest resilience.</h4>
+<h4 style="text-align:justify;" text-indent:56px;> Why This Matters to You</h4>
+<h4 style="text-align:justify;" text-indent:50px;> 1.Ice storms cause widespread tree damage, power outages, and road hazards.</h4>
+<h4 style="text-align:justify;" text-indent:50px;> 2.Addressing resiliency should help us reduce damage, improve safety, and protect urban forests.</h4>
+<h4 style="text-align:justify;" text-indent:50px;> 3.Community participation ensures that what we propose is useful and accessible to the community.</h4>
+<br>
+
+
+<!--<br>The foot keypoint <b>ordering</b> in the annotation file is as follows:<br> -->
+<!--<table border="0">
+<tr>
+    <td align="left"><img src="pro2.jpg" alt="photo" width="100%" /><h4> <center> <b>Figure 2. </b>The 2000 Normalized NTL (upper left), NDVI (lower left), and NDUI (right) maps in the Guangdong-Hong Kong-Macao Greater Bay Area, China.</center> </h4></td>
+    <!--<td>
+      <ol type="1" start="2">
+        <br>
+        <li>Left big toe.</li>
+        <li>Left small toe.</li>
+        <li>Left heel.</li>
+        <li>Right big toe.</li>
+        <li>Right small toe.</li>
+        <li>Right heel.</li>
+      </ol>
+    </td>-->
+</tr>
+</table>
+
+<!-- <center>
+  <img src="foot_keypoints.png"  width="150" alt="Foot examples">
+</center> -->
+  <div id="stats-table">
+     <!-- <table class="table table-striped" align="left">
+        <!--<tr>
+          <td>
+            <h5><b>Foot Keypoint Annotations (Training: ~13.5k annotations, Validation: ~0.5k annotations)</b></h5>
+          </td>
+        </tr>-->
+
+        <br>
+          <h2>awardsearch/showAward</h2>  <h2><a href=" https://www.nsf.gov/awardsearch/showAward?AWD_ID=2431463">AWD link</a></h2>
+             <!--<a href="https://code.earthengine.google.com/79c46b8a08ccb37d334a657c06510e4d"><h4>NDUI datasets</h4></a>-->
+			<!-- <h4><b>Account:714940417@qq.com </b> </h4>
+			 <h4> <b>Password:dfin5=Ed</b></h4> -->
+	    </tr>
+		
+		<br>
+		 <h2> Research Purpose </h2>
+
+		<!-- <h4 style="text-align:justify;">In the spirit to reproducibility, we uploaded all the NDUI datasets to Google Assets <b>(2000-2005: users/714940417, 2006-2010: users/bameshannon7, and 2010-2013: users/Qinglinglab)</b>, which can then be directly accessed and analyzed on the GEE platform. </h4>
+		 <tr>
+		<h4>The GEE Code for calling the NDUI data is as the following:</h4>
+		<h4><center><b>var img_name = ee.Image(“users/714940417/Year_GridID”) ;</b></center></h4>
+		<tr>
+		<h4 style="text-align:justify;">Example: <b>var img_name = ee.Image(“users/714940417/2000_125”);</b> This will call the Tile 125 of year 2000 and assign it to the variable img_name.</h4> -->
+		<h4 style="text-align:justify;">Understand community experiences with ice storm tree damage </h4>
+		<h4 style="text-align:justify;">Assess property damage and recovery processes  </h4>
+		<h4 style="text-align:justify;">Evaluate community preparedness and response </h4>
+		<h4 style="text-align:justify;">Identify strategies for future resilience </h4>
+		<tr>
+		    <td align="left"><img src="zipcode_counts.tif" alt="photo" width="100%" /><h4> <center> <b>Figure 1.</b> zipcode.</center> </h4></td>
+		    <!--<td>
+		      <ol type="1" start="2">
+		        <br>
+		        <li>Left big toe.</li>
+		        <li>Left small toe.</li>
+		        <li>Left heel.</li>
+		        <li>Right big toe.</li>
+		        <li>Right small toe.</li>
+		        <li>Right heel.</li>
+		      </ol>
+		    </td>-->
+		</tr>
+
+        <!--<tr>
+          <td>
+            Download the <a href="http://posefs1.perception.cs.cmu.edu/OpenPose/datasets/foot/person_keypoints_val2017_foot_v1.zip"><b>val2017_foot_v1.zip</b></a> JSON zip file.
+          </td>
+        </tr>-->
+
+        <!--<tr>
+          <td>
+            Download the image dataset from the <a href="http://cocodataset.org/#download" target="_blank"><b>original body-only dataset website</b></a> (in particular <a href="http://images.cocodataset.org/zips/train2017.zip"><b>2017 Train images [118K/18GB]</b></a> and <a href="http://images.cocodataset.org/zips/val2017.zip"><b>2017 Val images [5K/1GB]</b></a>)
+          </td>
+        </tr>-->
+
+         <!--<tr>
+          <td>
+            Trained foot detector models and testing code released in <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" target="_blank"><b>OpenPose</b></a>
+            </td>
+        </tr>-->
+
+      </table>
+  </div>
+  <!--<p>
+    The JSON files follow the same standard format than that of <a href="http://images.cocodataset.org/annotations/annotations_trainval2017.zip"><b>2017 Train/Val annotations [241MB]</b></a> (from the <a href="http://cocodataset.org/#download" target="_blank"><b>original body-only dataset website</b></a>).
+  </p>-->
+  <br>
+ <h2> Acknowledgements</h2>
+  <h4 style="text-align:justify;">Team members </h4>
+  <h4 style="text-align:justify;">Chengbin Deng, PhD, Associate Professor, Department of Geography and Environmental Sustainability, and Director, Center for Spatial Analysis (CSA), University of Oklahoma </h4>
+  <h4 style="text-align:justify;">Natalie Evans, MPA, Program & Marketing Director, OKC Beautiful </h4>
+  <h4 style="text-align:justify;">Brendan Lavy, PhD, Assistant Professor, Department of Environmental and Sustainability Sciences, TCU </h4>
+  <h4 style="text-align:justify;">Ming Xue, PhD, FAMS, FAGU, Professor, Department of Meteorology, and Director, Center for Analysis and Prediction of Storms (CAPS), University of Oklahoma </h4>
+  <h4 style="text-align:justify;">Postdoctoral researchers: Dr. Di Liu (CSA), University of Oklahoma </h4>
+  <h4 style="text-align:justify;">Research scientist: Dr. Yongjie Huang (CAPS), University of Oklahoma </h4>
+  
+  
+<br>
+<h2>Additional information</h2>
+<h4 style="text-align:justify;">Supplementary information is available for this paper at <a href="https://doi.org/10.3390/rs70911887">https://doi.org/10.3390/rs70911887</a>and <a href="https://doi.org/10.1109/TGRS.2016.2572724">https://doi.org/10.3390/rs70911887.</a></h4>
+<br>
+
+<!--<br>
+<h2>Code</h2>
+<h4>
+<a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose_train" target="_blank"><h4>https://github.com/CMU-Perceptual-Computing-Lab/openpose_train</h4></a>.
+</h4>-->
+
+<!--<br>
+<h2>Results</h2>-->
+<!--<center>
+ <a href="https://youtu.be/Cu7g2Ldm-WM" target="_blank"> <img src="results_flashmob.gif"
+    width="640"
+    alt="Foot examples">
+ Full video here: <b>here</b>
+</a>-->
+<!-- width="560" height="315" (youtube recommneded)-->
+<!-- allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" -->
+<!-- width="1024" height="576" -->
+<!-- <iframe
+width="960" height="540"
+src="https://www.youtube.com/embed/XPBw1IvixWg" frameborder="0"
+allowfullscreen></iframe> -->
+<!-- <iframe width="1024" height="450" src="https://www.youtube.com/embed/Lajt6vS_dSM" frameborder="0" allowfullscreen></iframe> -->
+<!--         <tr>
+          <td>
+            <img src="fig_feet.png"
+              width="1024"
+              alt="Foot examples">
+              height="200"
+          </td>
+        </tr> -->
+</center>
+</br>
+
+
+
+
+<!--<h2>Citation</h2>
+<h5>Please cite the following paper (<a href="https://arxiv.org/abs/1812.08008">arXiv link</a>) in your publications if the dataset helps your research.</h5>
+
+ @inproceedings{cao2018openpose,
+   <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;author = {Zhe Cao and Gines Hidalgo and Tomas Simon and Shih-En Wei and Yaser Sheikh},
+   <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {arXiv preprint arXiv:1812.08008},
+   <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;title = {Open{P}ose: realtime multi-person 2{D} pose estimation using {P}art {A}ffinity {F}ields},
+   <!-- &nbsp;&nbsp;&nbsp;&nbsp;title = {Open{P}ose: Realtime {M}ulti-{P}erson 2{D} {P}ose {E}stimation using {P}art {A}ffinity {F}ields},  -->
+ <!--  <br>
+   &nbsp;&nbsp;&nbsp;&nbsp;year = {2018}
+   <br>
+ }
+ <br>-->
+
+
+
+<br>
+<!--<h2>License</h2>
+<!--<p>The software and Foot Keypoint Annotations entitled <b><i>train2017_foot_v1.zip</i></b> and <b><i>val2017_foot_v1.zip</i></b>, as provided on this webpage, are owned by Carnegie Mellon University and are licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 License</a>. All rights not specifically granted are reserved. For any inquiries, please contact Scott McEvoy at <a href = "mailto: mcevoy@cmu.edu">mcevoy@cmu.edu</a> or <a href = "mailto: innovation@cmu.edu">innovation@cmu.edu</a>.</p>
+
+</div> <!-- /container -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/videopreview.js"></script>
+  </body>
+</html>
